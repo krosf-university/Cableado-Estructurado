@@ -1,24 +1,32 @@
 \section{Justificaciones}
+\subsection{\textbf{Etiquetado empleado: }}
+Para el etiquetado de las tomas en cada planta hemos decidido utilizar la siguiente nomenclatura:
+\begin{center}
+    \textbf{RX-ZY-N}
+\end{center}
+
 \begin{itemize}
-    \item \textbf{Etiquetado empleado: }\\ Para el etiquetado de las tomas en cada planta hemos decidido utilizar la siguiente nomenclatura: \centerline{\textbf{RX-ZY-N}}
-    \begin{itemize}
-        \item RX: Indica el rack al que estará conectada la toma en cuestión, puediendo ser 0 si se refiere al rack de la planta baja o 1 si es al rack de la primera planta.
-        \item ZY: Indica la zona en la que se encuentra la toma. Cada planta esta dividida en 3 zonas: N (Norte), E (Este) y O (Oeste).
-        \item N: Indica el número asignado a dicha toma.
-    \end{itemize}
-    \vspace{0.5cm}
-    En el etiquetado de los switches se ha seguido la siguiente nomenclatura: \centerline{\textbf{RX-SY-0/1}}
-    \begin{itemize}
-        \item RX: Indica el rack al que estará conectada la toma en cuestión, puediendo ser 0 si se refiere al rack de la planta baja o 1 si es al rack de la primera planta.
-        \item SY: Indica el switch al que esta conectada la toma en el rack. La Y indica si se trata de una de las 3 zonas anteriormente mencionadas: E, N u O.
-        \item \textbf{ACLARACIÓN:} Indicamos los pares e impares en los etiquetados de forma que, cuando se trata de un puesto de trabajo, el número par es de voz (RJ-11) y el impar se trata de ethernet (RJ-45)- \\ Además esto sive para cuando son puestos de trabajo, cuando estos se acaban siguen otro dispositivios y ya no sigue la misma norma.
-    \end{itemize}
-    \vspace{1cm}
-    \item \textbf{Medio físico del área de trabajo}
-    \vspace{1cm}
-    \item \textbf{Medio físico del cableado horizontal}
-    \vspace{1cm}
-    \item \textbf{Medio físico del cableado vertical}
-    \vspace{1cm}
-    \item \textbf{¿Porqué sólo 2 Racks?}\\ Para este plano de edificio con dos plantas sólo hemos empleado 2 Racks
+    \item \textbf{RX:} Indica el rack al que estará conectada la toma en cuestión, puediendo ser 0 si se refiere al rack de la planta baja o 1 si es al rack de la primera planta.
+    \item \textbf{ZY}: Indica la zona en la que se encuentra la toma. Cada planta esta dividida en 3 zonas: N (Norte), E (Este) y O (Oeste).
+    \item \textbf{N}: Indica el número asignado a dicha toma.
 \end{itemize}
+
+En el etiquetado de los switches se ha seguido la siguiente nomenclatura:
+
+\begin{center}
+    \textbf{RX-SY-0/1}
+\end{center}
+
+\begin{itemize}
+    \item RX: Indica el rack al que estará conectada la toma en cuestión, pudiendo ser \textbf{0} si se refiere al rack de la planta baja o 1 si es al rack de la primera planta.
+    \item SY: Indica el switch al que esta conectada la toma en el rack. La Y indica si se trata de una de las 3 zonas anteriormente mencionadas: E, N u O.
+\end{itemize}
+
+\subsection{Medio físico del área de trabajo}
+\subsection{Medio físico del cableado horizontal}
+\subsection{Medio físico cableado vertical}
+El orden de los dispositivos del rack 2 se ajusta al camino lógico que siguen los datos, como una estructura en cascada. En la parte superior de ambos racks se ha colocado el panel de fibra óptica (previene la acumulación de polvo), justo debajo tenemos los switches organizados por zonas (en la imagen tenemos una posibilidad) y abajo del todo los paneles de conexión, primero el de Internet y al final el de conexiones telefónicas. El router queda ubicado en el rack de edificio, en la planta baja, así como la centralita. En el cableado vertical de datos, para evitar cuellos de botella, utilizaremos fibra multimodo, ya que la distancia que tiene que recorrer el cable es corta y es mucho más tolerante al desalineamiento que la monomodo. Respecto al de voz, se utilizarán mangueras de cable multipar, siguiendo la normativa. De cara al futuro, el cableado estaría preparado para cualquier necesidad de aumento del ancho de banda.
+\subsection{¿Porqué sólo 2 Racks?}
+Para este plano de edificio con dos plantas sólo hemos empleado 2 Racks
+\subsection{Número y ubicación de los distribuidores}
+Utilizaremos un solo armario por planta (siendo el de la planta baja el rack de edificio). Hemos decidido ubicarlo en la habitación condicionada en la zona Norte, ya que esta zona está centrada (lo que reduce las longitudes de los cables) y cercana al patio (lo que ayuda en el acondicionamiento). En la planta alta el distribuidor estará justo arriba del distribuidor de la planta baja, esto permitirá que el cableado vertical sea lo más corto posible.
